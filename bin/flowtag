@@ -1,4 +1,4 @@
-#! /opt/local/bin/ruby
+#!/usr/bin/env ruby
 # DESCRIPTION: presents the user with a GUI interface to visualize and explore flows found from a given pcap file.
 # FLOWTAG - parses and visualizes pcap data
 # Copyright (C) 2007 Christopher Lee
@@ -22,10 +22,10 @@ unless ARGV.length > 0
 end
 
 require 'tk'  # this takes a long time to load
-require 'tk/labelframe'
-require 'flowtag/flowdb'
-require 'flowtag/flowcanvas'
-require 'flowtag/flowtable'
+#require 'tk/labelframe'
+require_relative '../lib/flowtag/flowdb'
+require_relative '../lib/flowtag/flowcanvas'
+require_relative '../lib/flowtag/flowtable'
 require 'tk-double-slider'
 
 def select_cb(flows)
