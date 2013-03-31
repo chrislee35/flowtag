@@ -1,4 +1,4 @@
-#! /opt/local/bin/ruby
+#!/usr/bin/env ruby
 # DESCRIPTION: is part of the flowtag toolkit and prints the flows from a flowdb
 # FLOWTAG - parses and visualizes pcap data
 # Copyright (C) 2007 Christopher Lee
@@ -16,8 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-require 'flowtag/flowdb'
-
+require_relative '../lib/flowtag/flowdb'
 unless ARGV.length > 0
 	puts "Usage: $0 <pcapfile>"
 	exit
