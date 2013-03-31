@@ -46,7 +46,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.2.3"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.4"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
+      s.add_development_dependency(%q<simplecov>, [">= 0"])
       s.add_runtime_dependency(%q<tk-double-slider>, [">= 0.1.0"])
       s.add_runtime_dependency(%q<tk-parallel-coordinates>, [">= 0.1.0"])
     else
@@ -55,7 +55,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<bundler>, ["~> 1.2.3"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
-      s.add_dependency(%q<rcov>, [">= 0"])
+      s.add_dependency(%q<simplecov>, [">= 0"])
       s.add_dependency(%q<tk-double-slider>, [">= 0.1.0"])
       s.add_dependency(%q<tk-parallel-coordinates>, [">= 0.1.0"])
     end
@@ -65,7 +65,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<bundler>, ["~> 1.2.3"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
-    s.add_dependency(%q<rcov>, [">= 0"])
+    s.add_dependency(%q<simplecov>, [">= 0"])
     s.add_dependency(%q<tk-double-slider>, [">= 0.1.0"])
     s.add_dependency(%q<tk-parallel-coordinates>, [">= 0.1.0"])
   end
