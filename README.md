@@ -17,6 +17,21 @@ The FlowTag package contains 3 command-line tools in addition to the GUI. These 
 
 ## Installation
 
+For mac users, to install Ruby with Tk, please use something akin to the following:
+
+	sudo port install ruby19+c_api_docs+doc+mactk
+
+If you want to go the "RVM" route, which I don't recommend for new users, but I do recommend for anyone writing new modules.  You'll need to install TK and TCL libraries to make this work.
+I'm guessing at this point, but probably:
+
+	sudo port install tk+quartz
+
+Then, go ahead and install all three Rubies as follows:
+
+	rvm reinstall 1.8.7 --enable-shared --enable-pthread --with-tk --with-tcl
+	rvm reinstall 1.9.3 --enable-shared --enable-pthread --with-tk --with-tcl
+	rvm reinstall 2.0.0 --enable-shared --enable-pthread --with-tk --with-tcl
+
 Add this line to your application's Gemfile:
 
     gem 'flowtag'
